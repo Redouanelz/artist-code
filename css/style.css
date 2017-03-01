@@ -1,0 +1,353 @@
+/* fonts */
+@font-face {
+  font-family: FontXBold;
+  src: url('../fonts/BebasNeue Bold.ttf');
+}
+@font-face {
+  font-family: FontXThin;
+  src:url('../fonts/BebasNeue Thin.ttf');
+}
+@font-face {
+  font-family: FontXRegular;
+  src:url('../fonts/BebasNeue Regular.ttf');
+}
+@font-face {
+  font-family: FontXLight;
+  src:url('../fonts/BebasNeue Light.ttf');
+}
+@font-face {
+    font-family: FontXBook;
+    src:url('../fonts/BebasNeue Book.ttf');
+}
+@font-face {
+  font-family: Questrial;
+  src: url('../fonts/Questrial-Regular.otf');
+}
+@font-face {
+  font-family: Afta;
+  src: url('../fonts/AftaSerifThin-Regular.otf');
+}
+@font-face {
+  font-family: AftaItalic;
+  src: url('../fonts/AftaSerifThin-Italic.otf');
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Bad Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bad Script Regular'), local('BadScript-Regular'), url(http://fonts.gstatic.com/s/badscript/v5/xvnrV3H3fZsc-fSw6fOJeCEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin */
+@font-face {
+  font-family: 'Bad Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bad Script Regular'), local('BadScript-Regular'), url(http://fonts.gstatic.com/s/badscript/v5/rL_b2ND61EQmMOJ8CRr1fvk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* //fonts */
+
+/* header */
+header
+{
+  background-image: url(../img/Bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+h4{
+  font-family: FontXLight;
+  color: crimson;
+  font-size: 50px;
+  letter-spacing: 4px;
+}
+h3{
+  font-family: FontXRegular;
+  color: crimson;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+h2{
+  font-family: FontXBook;
+  color: crimson;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+.h3_center{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+h1{
+  font-family: Bad Script;
+  color: teal;
+  font-size: 20px;
+}
+p{
+   font-family: Questrial;
+   font-size: 15px;
+}
+a{
+  color: teal;
+}
+a:hover{
+  color: teal;
+}
+.DisplayNone{
+  display: none;
+}
+    /* top-bar */
+    .top-bar{
+      margin-top: 10px 5px 0px 5px;
+      padding: 10px 0px;
+      background-color: transparent;
+      color: white;
+    }
+     .logo img
+     {
+       margin-right: 5px;
+       width: 50px;
+       height: 50px;
+     }
+    .phone li
+    {
+      display: inline;
+      text-decoration: none;
+      font-family: FontXRegular;
+      font-size: 18px;
+    }
+    .social-icons-top ul{
+      margin-top: 15px;
+    }
+    .social-icons-top li
+    {
+        display: inline;
+        text-decoration: none;
+    }
+    .social-icons-top a img
+    {
+      width: 30px;
+      height: 30px;
+    }
+    @media screen and (max-width: 780px) {
+        #social-icons-top-block {
+           visibility: hidden;
+        }
+    }
+    /* //top-bar */
+    /* navbar */
+
+    .total-navbar{
+    	background-color: Transparent;
+    }
+    .total-navbar-container{
+    }
+    .total-navbar #navbar{
+      margin-left: 25%;
+    }
+    .navbar-default {
+    	background-color: Transparent;
+    	border:none;
+    }
+    .navbar {
+        border-radius: 0px;
+    	margin:0;
+    }
+
+    .navbar-right {
+        float: none!important;
+    	margin-right:0px!important;
+      font-family: FontXBold;
+      font-size: 18px;
+    }
+    .navbar-default .navbar-nav > li > a {
+    	padding:15px 30px;
+      color: white;
+    }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+        color: crimson;
+        transition: color 1s;
+    }
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    	color: crimson;
+     border-bottom: 2px solid crimson;
+      background-color: transparent;
+    }
+    .navbar-toggle {
+    	border-radius:0px;
+    }
+    /* //navbar */
+/* //header */
+
+/* banner */
+.banner-top
+{
+  text-align: left;
+  background-size: cover;
+  color: white;
+}
+
+#banner-top-desc{
+  margin-bottom : 15%;
+}
+
+
+.btnFlat{
+   font-family: FontXRegular;
+   font-size: 15px;
+   color: white;
+   text-decoration: none;
+   border: 2px solid white;
+   padding: 10px 15px;
+}
+.btnFlat:hover{
+   text-decoration: none;
+  color: crimson;
+  border: 2px solid crimson;
+  transition: color 0.5s,border 0.5s;
+}
+/* //banner */
+
+/* Section */
+.Section{
+  margin: 5% 0px;
+  padding: 5%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* //Section */
+
+/* SectionOne */
+/* //SectionOne */
+
+/* SectionTwo */
+.SectionTwo{
+  background-image: url('../img/Bg.jpg');
+  color: white;
+  font-family: Questrial;
+}
+.SectionTwo span{
+  color: teal;
+  font-size: 15px;
+}
+/* //SectionTwo */
+
+/* SectionThree */
+.SectionThree .TeamMember{
+
+}
+.SectionThree .TeamMember img{
+  width: 50px;
+  height: 50px;
+}
+.SectionThree .TeamMember h5{
+ font-family: FontXBook;
+ font-size: 20px;
+}
+/* //SectionThree */
+
+/* SectionFour */
+.SectionFour{
+  background-image: url('../img/Bg.jpg');
+  color: white;
+}
+
+.SectionFour .work img{
+  width: 100%;
+  height: 200px;
+  border: 1px solid grey;
+  background-image: image('../img/work/w1.jpg');
+  transition: width 2s, height 2s;
+}
+.SectionFour .work img:hover{
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+
+.SectionFour .workDesc{
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 15px;
+   margin: 15px;
+}
+.Section iframe{
+    margin-bottom: 20px;
+    border: 1px solid grey;
+}
+/* //SectionFour */
+
+/* SectionFive */
+#ContactForm input , textarea {
+  margin: 5px;
+  font-family: Questrial;
+}
+/* //SectionFive */
+
+/* footer */
+footer{
+  background-image: url('.../img/MindNodes1.jpg');
+  background-color: #212121;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+footer ul{
+  padding: 0px;
+}
+footer li{
+  text-decoration: none;
+  font-family: Questrial;
+  list-style: none;
+}
+footer a{
+  font-family: Bad Script;
+}
+footer span{
+    padding-right: 10px;
+}
+footer #logo{
+  margin: 5%;
+  width: 100%;
+  height: 100%;
+}
+footer .row{
+    padding: 5%;
+}
+/* //footer */
+
+/* Copy */
+.Copy{
+  background-color : black;
+  height: 100%;
+  min-height: 50px;
+      margin-bottom: 0px;
+}
+.Copy p{
+  text-align: center;
+  vertical-align: center;
+  padding: 20px;
+  font-family: Bad Script;
+  color: white;
+  margin-bottom: 0px;
+}
+/* //Copy */
+
+#up{
+  position: sticky;
+  margin-left: 45%;
+  height: 40px;
+  margin-top: -35px;
+  transition: height 2s;
+}
+#up:hover{
+  height: 45px;
+  transition: height 0.5s;
+}
